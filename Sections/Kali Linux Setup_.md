@@ -47,4 +47,68 @@ Choose 1 (Default Installation)
 `cargo install feroxbuster`
 
 ------------------------------------------------------------------------------------------
-## Changing the Defalut Shell (echo $SHELL) to a more Friendly Tool
+## Changing the Defalut Shell (echo $SHELL) to a more Friendly Shell
+
+[Can Be Skipped]
+
+mkdir -p ~/Downloads/Scripts && cd ~/Downloads/Scripts
+
+Downloading the Git Repo of Powerline Fonts -- [One with built in capabilities to Render Special Characters within the Terminal]
+
+`git clone https://github.com/powerline/fonts`
+
+Install all powerline fonts into the system so that they are now usable:
+cd fonts
+./install.sh
+
+To be used in a custom profile in Terminator
+
+------------------------------
+Now, we have already installed the fish shell but aren't using it, Can be verified using:
+
+```
+└─$ cat /etc/shells
+# /etc/shells: valid login shells
+/bin/sh
+/bin/bash
+/usr/bin/bash
+/bin/rbash
+/usr/bin/rbash
+/bin/dash
+/usr/bin/dash
+/usr/bin/pwsh
+/opt/microsoft/powershell/7/pwsh
+/usr/bin/tmux
+/usr/bin/screen
+/bin/zsh
+/usr/bin/zsh
+/usr/bin/fish
+```
+
+We will be using a customizer called Oh-my-fish, to make the fish shell look even better!!
+
+To get that started before we run the Fish shell:
+
+curl -kL https://get.oh-my.fish | fish [Something like Plugin Manager for the Fish shell and allows a lot of customization]
+
+-> Upon Completion, it brings us to the fish shell!! Exit from the Fish shell using the `exit` command
+
+-> However, this command breaks the Zshell, so we need to fix it
+
+-> Installing a them for the Fish shell:
+`fish -c "omf install bobthefish"`
+
+Close the Default Terminal and Open Terminator now!!!!!!!
+
+Use the command below:
+
+`echo "set -x PATH \$PATH $HOME/.cargo/bin" >> ~/.config/fish/config.fish`
+
+-> Making sure that Fish shell also knows about the Cargo binaries that we just installed - so when we run the fish shell cargo is also available there to us.
+
+### To change the default shell to Fish shell:
+
+`chsh -s /usr/bin/fish`
+
+To go back to the default shell, 
+`chsh -s /bin/zsh`
