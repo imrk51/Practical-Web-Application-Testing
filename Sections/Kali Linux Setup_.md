@@ -59,8 +59,7 @@ Downloading the Git Repo of Powerline Fonts -- [One with built in capabilities t
 
 Install all powerline fonts into the system so that they are now usable:
 ```
-cd fonts
-./install.sh
+cd fonts; ./install.sh
 ```
 
 To be used in a custom profile in Terminator
