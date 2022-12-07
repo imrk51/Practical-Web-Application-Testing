@@ -51,15 +51,17 @@ Choose 1 (Default Installation)
 
 [Can Be Skipped]
 
-mkdir -p ~/Downloads/Scripts && cd ~/Downloads/Scripts
+`mkdir -p ~/Downloads/Scripts && cd ~/Downloads/Scripts`
 
 Downloading the Git Repo of Powerline Fonts -- [One with built in capabilities to Render Special Characters within the Terminal]
 
 `git clone https://github.com/powerline/fonts`
 
 Install all powerline fonts into the system so that they are now usable:
+```
 cd fonts
 ./install.sh
+```
 
 To be used in a custom profile in Terminator
 
