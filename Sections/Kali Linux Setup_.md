@@ -99,6 +99,9 @@ To get that started before we run the Fish shell:
 -> Installing a them for the Fish shell:
 `fish -c "omf install bobthefish"`
 
+![image](https://user-images.githubusercontent.com/11171288/206270277-1b0c4123-ba04-4773-a65f-aef2d2dbe3e2.png)
+
+
 Close the Default Terminal and Open Terminator now!!!!!!!
 
 Use the command below:
