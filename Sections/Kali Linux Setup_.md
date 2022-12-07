@@ -114,5 +114,8 @@ Use the command below:
 
 `chsh -s /usr/bin/fish`
 
+![image](https://user-images.githubusercontent.com/11171288/206270887-314fcabe-1a59-4700-921a-628de46d5709.png)
+
+
 To go back to the default shell, 
 `chsh -s /bin/zsh`
