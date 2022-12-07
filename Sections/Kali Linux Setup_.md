@@ -89,7 +89,7 @@ We will be using a customizer called Oh-my-fish, to make the fish shell look eve
 
 To get that started before we run the Fish shell:
 
-curl -kL https://get.oh-my.fish | fish [Something like Plugin Manager for the Fish shell and allows a lot of customization]
+`curl -kL https://get.oh-my.fish | fish` [Something like Plugin Manager for the Fish shell and allows a lot of customization]
 
 -> Upon Completion, it brings us to the fish shell!! Exit from the Fish shell using the `exit` command
 
